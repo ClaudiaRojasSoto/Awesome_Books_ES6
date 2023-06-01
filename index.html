@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Awesome Books</title>
+</head>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <h1>Awesome books</h1>
+      <ul class="menu-list">
+        <li><a href="#" id="list">List</a></li>
+        <span class="line"></span>
+        <li><a href="#" id="new">Add New</a></li>
+        <span class="line"></span>
+        <li><a href="#contact-section" id="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p id="date"></p>
+  </header>
+  <main>
+    <div id="div-list" class="list-section" >
+      <h2>All Awesome books</h2>
+      <div id="book-list" ></div>
+    </div>
+    <section id="form-section" class="list-section hidden">
+      <form action="">
+        <h3>Add new book</h3>
+        <div class="input-container">
+          <div>
+            <input class="inputs" id="title" type="text" placeholder="title">
+          </div>
+          <br>
+          <div>
+            <input class="inputs" id="author" type="text" placeholder="author">
+          </div>
+          <br>
+          <div class="button">
+            <button  id="add-button" type="submit">Add</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="list-section hidden" id="contact-section">
+      <h2>Contact Information</h2>
+      <p>If you have any question or just want to say "Hello!"?<br>You can reach out to us</p>            
+      <ul class="contact-list">
+        <li><a href="https://github.com/ClaudiaRojasSoto">Claudia Rojas</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="copyright">
+      <p>Copyright <a href="./MIT.md">MIT License</a></p>
+    </div>
+  </footer>
+  
+  <script type="module" src="./modules/index.js"></script>
+
+</body>
+</html>

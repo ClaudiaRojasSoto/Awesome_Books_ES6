@@ -1,0 +1,155 @@
+* {
+  margin: 5px 5px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+
+#nav-bar {
+  border: 2px solid black;
+  margin: 12px 0;
+  padding: 5px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-list {
+  display: flex;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  list-style: none;
+}
+
+.menu-list li a {
+  color: #000;
+}
+
+.menu-list li a:hover {
+  color: rgb(80, 207, 253);
+}
+
+.line {
+  height: 30px;
+  width: 1px;
+  background-color: black;
+  border: solid 1px black;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+h1,
+h3 {
+  text-align: center;
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+
+.list-container {
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  align-self: flex-end;
+  box-shadow: 3px 3px;
+}
+
+.even {
+  background-color: grey;
+}
+
+.separation-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 15%;
+  border: solid 2px black;
+  margin-left: 42.5%;
+  margin-top: 36px;
+}
+
+.input-container {
+  margin-left: 35%;
+  margin-right: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  width: 100%;
+  border: solid 2px black;
+  padding: 5px;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact-section {
+  text-align: center;
+}
+
+#contact-section p,
+#contact-section ul {
+  margin-bottom: 12px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-list li {
+  align-self: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+#date {
+  text-align: right;
+}
+
+#div-list h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.copyright {
+  position: absolute;
+  top: 90%;
+  width: 90%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  border: 2px solid black;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    padding-left: 50px;
+  }
+}
