@@ -37,7 +37,7 @@ class BookList {
       const book = new Book(Date.now(), title, author);
       this.bookManager.addBook(book);
     }
-    // Use the method through the instance itself
+    
     this.displayBooks();
     this.inputAuthor.value = '';
     this.inputTitle.value = '';
