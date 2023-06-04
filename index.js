@@ -37,7 +37,7 @@ class BookList {
       const book = new Book(Date.now(), title, author);
       this.bookManager.addBook(book);
     }
-    
+
     this.displayBooks();
     this.inputAuthor.value = '';
     this.inputTitle.value = '';

@@ -1,4 +1,4 @@
-import { DateTime } from 'https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/es6/luxon.min.js';
+import { DateTime } from './luxon.js';
 
 const displayDate = (elementId) => {
   const dateElement = document.getElementById(elementId);
@@ -12,7 +12,6 @@ const displayDate = (elementId) => {
 
   updateTime();
   setInterval(updateTime, 1000);
-}
+};
 
 export default displayDate;
-
