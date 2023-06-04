@@ -1,9 +1,11 @@
-export function displayDate(elementId) {
+import { DateTime } from 'https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/es6/luxon.min.js';
+
+function displayDate(elementId) {
   const dateElement = document.getElementById(elementId);
 
   const updateTime = () => {
-    const today = luxon.DateTime.now();
-    const format = today.toLocaleString(luxon.DateTime.DATETIME_FULL);
+    const today = DateTime.now();
+    const format = today.toLocaleString(DateTime.DATETIME_FULL);
 
     dateElement.textContent = format;
   };
@@ -11,3 +13,5 @@ export function displayDate(elementId) {
   updateTime();
   setInterval(updateTime, 1000);
 }
+
+export default displayDate;

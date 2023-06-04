@@ -1,7 +1,6 @@
-import { DateTime } from 'https://cdn.skypack.dev/luxon';
 import Book from './modules/book.js';
 import BookManager from './modules/bookManager.js';
-import { displayDate } from './modules/dateManager.js';
+import displayDate from './modules/dateManager.js';
 import { displayBooks } from './modules/bookListView.js';
 
 class BookList {
@@ -15,6 +14,7 @@ class BookList {
     this.books = [];
     this.bookManager = new BookManager();
     this.inputButton.addEventListener('click', (event) => this.addBooks(event));
+    // Use the method through the instance itself
     this.displayBooks();
 
     this.listLink = document.getElementById('list');
@@ -25,6 +25,7 @@ class BookList {
     this.addLink.addEventListener('click', () => this.showSection('form-section'));
     this.contactLink.addEventListener('click', () => this.showSection('contact-section'));
 
+    // Use the method through the instance itself
     this.displayDate();
   }
 
@@ -36,6 +37,7 @@ class BookList {
       const book = new Book(Date.now(), title, author);
       this.bookManager.addBook(book);
     }
+    // Use the method through the instance itself
     this.displayBooks();
     this.inputAuthor.value = '';
     this.inputTitle.value = '';
@@ -54,11 +56,11 @@ class BookList {
     }
   }
 
-  displayDate() {
+  displayDate = () => {
     displayDate('date');
   }
 
-  displayBooks() {
+  displayBooks = () => {
     displayBooks(this.bookList, this.bookManager);
   }
 }

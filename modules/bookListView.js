@@ -1,6 +1,3 @@
-import Book from './book.js';
-import BookManager from './bookManager.js';
-
 export function displayBooks(bookListElement, bookManager) {
   const books = bookManager.getBooks();
 
@@ -29,7 +26,7 @@ export function displayBooks(bookListElement, bookManager) {
   attachRemoveButtonListeners(bookListElement, bookManager);
 }
 
-function attachRemoveButtonListeners(bookListElement, bookManager) {
+export function attachRemoveButtonListeners(bookListElement, bookManager) {
   const removeButtons = bookListElement.querySelectorAll("button[id^='remove-button-']");
   removeButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
