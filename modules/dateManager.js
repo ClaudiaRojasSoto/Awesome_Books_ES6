@@ -5,13 +5,13 @@ const displayDate = (elementId) => {
 
   const updateTime = () => {
     const today = DateTime.now();
-    const format = today.toLocaleString(DateTime.DATETIME_FULL);
-
+    const format = today.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
     dateElement.textContent = format;
   };
 
   updateTime();
   setInterval(updateTime, 1000);
 };
+
 
 export default displayDate;
