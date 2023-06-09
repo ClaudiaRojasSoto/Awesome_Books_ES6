@@ -13,5 +13,4 @@ const displayDate = (elementId) => {
   setInterval(updateTime, 1000);
 };
 
-
 export default displayDate;
